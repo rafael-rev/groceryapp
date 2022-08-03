@@ -1,11 +1,9 @@
 package com.revature;
 
-import com.revature.models.User;
-import com.revature.store.Store;
 import com.revature.consoleviews.MainMenu;
 
 /**
- * Grocery List
+ * Grocery List Target Functionality
  *  - register new user
  *  - login as new user
  *  - when logged in
