@@ -11,9 +11,10 @@ package com.revature.models;
  */
 
 public class User {
+    // Declare Instance Variables
     private String username, password, firstname, lastname = "";
 
-
+    // All Parameter Constructor
     public User(String username, String password, String firstname, String lastname) {
         this.username = username;
         this.password = password;
@@ -21,13 +22,14 @@ public class User {
         this.lastname = lastname;
     }
     
-
+    // 2 Parameter Constructor (for creating a temp User object for validating credentials)
     public User(String username, String password){
         this.username = username;
         this.password = password;
         
     }
 
+    // Getters & Setters for Instance Variables
     public String getUsername() {
         return this.username;
     }
@@ -60,6 +62,7 @@ public class User {
         this.lastname = lastname;
     }
 
+    // Polymorphistic Overriding of toString method of Object parent class
     @Override
     public String toString() {
         return "{" +
@@ -69,5 +72,4 @@ public class User {
             ", lastname='" + getLastname() + "'" +
             "}";
     }
-    
 }
