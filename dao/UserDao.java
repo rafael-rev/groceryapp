@@ -1,6 +1,7 @@
 package com.revature.dao;
 import com.revature.models.*;
 import java.util.List;
+
 /*
  * DAO = Data Access Objects
  *      - PURPOSE: to act as interface to DB
@@ -17,7 +18,6 @@ import java.util.List;
  *  - get specific user from storage
  */
 
-
 public interface UserDao {
     // Vars in an interface are *implicitly*:        ---public static final--- ('final' makes variables immutable)
     // Methods in an interface are *implicitly*:     ---public abstract---
@@ -30,5 +30,5 @@ public interface UserDao {
     User getUserByUsername(String username);
 
     // createUser abstract method, takes a User object (to be added to data storage in implementation) and returns nothing
-    void createUser(User user); 
+    void createUser(User user);
 }

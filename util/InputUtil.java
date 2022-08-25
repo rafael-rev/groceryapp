@@ -1,10 +1,9 @@
 package com.revature.util;
-
 import java.util.Scanner;
 
 /*
  * Utility class made to handle user input AND menu messaging for the console app
- */
+*/
 
 public class InputUtil {
     // Declare scanner input object

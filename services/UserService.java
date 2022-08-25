@@ -14,7 +14,7 @@ import com.revature.dao.*;
 
 public class UserService {
     // Create Dao object from **DAO Implementation** for interaction with storage
-    UserDaoJavaImpl userDao = new UserDaoJavaImpl();
+    UserDaoImpl userDao = new UserDaoImpl();
 
     public boolean validateCreds(User credentials) {
         // method to validate the credentials of a given User object
@@ -24,7 +24,6 @@ public class UserService {
         //      based on the username of the given 'credentials' User argument
         // getUserByUsername returns 'null' if no match found
         User userFromStore = userDao.getUserByUsername(credentials.getUsername()); 
-        
         // if the result of the line above is null, return false (username fail)
         if (userFromStore == null) {
             return false;
@@ -45,7 +44,6 @@ public class UserService {
     }
 
     public User createUser(User userToCreate){
-
         // Check for dupes first
         // method getUserByUsername from the Dao Implementation will handle this
         // NOTE: This 'userFromDb' is NOT the same variable as 'userFromDB' in MainMenu.java, NOR 'userFromDB' 
